@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>透明度动画效果</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<script>
+			$(function () {
+				$("#btn1").click(function () {
+					$("#box").fadeOut(1000);// 透明度渐变隐藏
+				});
+				$("#btn2").click(function () {
+					$("#box").fadeIn(1000);// 透明度渐变显示
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="隐藏" />
+		<input type="button" id="btn2" value="显示" />
+		<div id="box" style="width:200px;height:100px;background-color:peru;">
+			
+		</div>
+	</body>
+</html>

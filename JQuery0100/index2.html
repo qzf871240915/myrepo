@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<!--
+        	1. 基础语法：
+        			$(selector)：选择器，参考了CSS的选择器语法
+        			$("#id")：id选择器，根据id值选中页面的一个标签
+        			$(".class"):class选择器，根据class属性值，获取一个标签对象的集合/数组
+					$("tagname"):标签选择器，根据标签名称，获取某个标签的数组/集合
+					......
+        -->
+        <script>
+        	$(function() {
+        		// id选择器
+        		var idItem = $("#container");
+        		var classItem = $(".item");
+        		var tagItem = $("p");
+        		
+        		// 给p元素添加单击事件
+        		classItem.click(function () {
+        			// this对象——JS里面的DOM对象——指代当前对象
+        			/*
+        			 * jquery中使用的时候，调用了hide()方法
+        			 * hide()方法是jquery的方法，DOM对象不能调用
+        			 * 
+        			 * $(DOM对象)——>JQuery对象--> 调用JQuery的方法
+        			 * JQuery对象[index]--> DOM对象
+        			 * JQuery对象.get(index)-->DOM对象
+        			 * 
+        			 * hide()// 隐藏当前元素
+        			 * toggle();// 切换当前元素的显示/隐藏状态
+        			 * 
+        			 * 案例：下拉菜单
+        			 * --.JS实现下拉菜单【无动画】--> JQuery进行割接
+        			 */
+        			
+        			$(this).hide(1000);
+        		});
+        		/*
+        		 * alert();
+        		 * document.write();
+        		 * console.log();
+        		 */
+        		console.log(idItem);
+        		console.log(classItem);
+        		console.log(tagItem);
+        	});
+        </script>
+	</head>
+	<body>
+		<div id="container">
+			<p class="item">天地不仁，以为万物为刍狗</p>
+			<p class="item">天地不仁，以为万物为刍狗</p>
+			<p class="item">天地不仁，以为万物为刍狗</p>
+			<p class="item">天地不仁，以为万物为刍狗</p>
+			<p>天地不仁，以为万物为刍狗</p>
+			<p>天地不仁，以为万物为刍狗</p>
+		</div>
+	</body>
+</html>

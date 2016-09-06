@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<script>
+			// 1. 标签选择器,获取->控制台打印查看
+			// 2. id选择器,获取->控制台打印
+			// 3. class选择器，获取->控制台打印
+			// 4. 复合选择器，获取->控制台打印【参考css语法】
+			/*
+			 * parent  child{}
+			 * parent > child{}
+			 * item1, item2{}
+			 * item1 + item2{} 相邻选择器
+			 * item1 ~ item2{} 兄弟选择器
+			 */
+			$(function () {
+				/*******常用******/
+				$("#idselector").click(function() {
+					var container = $("#container");
+					container.css("border", "#006699 solid 2px");
+				});
+				/*******常用******/
+				$("#classselector").click(function() {
+					var classObj = $(".item");
+					classObj.css({"border":"#006699 solid 2px"});
+				});
+				/*******常用******/
+				$("#tagselector").click(function () {
+					var tagObj = $("p");
+					tagObj.css({"border":"#006699 solid 2px"});
+				});
+				/*******常用******/
+				$("#containerselector").click(function() {
+					var containObj = $("#container p");
+					containObj.css({"border":"#006699 solid 2px"});
+				});
+				/*******常用******/
+				$("#childselector").click(function() {
+					var childObj = $("#container > p");
+					childObj.css({"border":"#006699 solid 2px"});
+				});
+				/*******常用******/
+				$("#fuheselector").click(function() {
+					var childObj = $("#container,.item1");
+					childObj.css({"border":"#006699 solid 2px"});
+				});
+				/*******不常用******/
+				$("#xianglinselector").click(function() {
+					var xlObj = $("#box + p");
+					xlObj.css({"border":"#006699 solid 2px"});
+					console.log(xlObj);
+				});
+				/*******不常用******/
+				$("#brotherselector").click(function() {
+					var xlObj = $("#box ~ p");
+					xlObj.css({"border":"#006699 solid 2px"});
+					console.log(xlObj);
+				});
+			});
+			
+		</script>
+		<style>
+		input[type="button"]{width:100px;height:40px;border:#ccc solid 1px;border-radius: 5px;}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="idselector" value="id选择器" />
+		<input type="button" id="classselector" value="class选择器" />
+		<input type="button" id="tagselector" value="tag选择器" />
+		<input type="button" id="containerselector" value="包含选择器" />
+		<input type="button" id="childselector" value="子类选择器" />
+		<input type="button" id="fuheselector" value="复合选择器" />
+		<input type="button" id="xianglinselector" value="相邻选择器" />
+		<input type="button" id="brotherselector" value="兄弟选择器" />
+		<div id="container">
+			<p class="item">test selector p</p>
+			<p class="item">test selector p</p>
+			<p class="item" id="box">test selector p,,box</p>
+			<p class="item contains">123test selector p</p>
+			<div class="item">test selector div
+				<p class="item1 item">test selector p</p>
+				<p class="item1 item">test selector p</p>
+				<p class="item1 item">test selector p</p>
+				<p class="item1 item">test selector p</p>
+				<p class="item"></p>
+				<p></p>
+			</div>
+		</div>
+	</body>
+</html>
