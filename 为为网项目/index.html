@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 		<title>上海装修网_2016年上海市知名装修网_上海装修建材团购网[为为网]</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 		<script type="text/javascript" src="js/index.js" ></script>
-		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
 	</head>
 	<body>
 		<div id="top-wrap"> 
@@ -44,10 +44,33 @@
 			<div id="nav">
 				<ul id="nav-nav">
 					<li class="current">首页</li>
-					<li>家居商城</li>
-					<li>装修攻略</li>
-					<li>装修图片</li>
-					<li>家居生活</li>
+					<li>家居商城
+						<div class="sele">
+							<span class="seles">建材城</span>
+							<span class="seles">家具城</span>
+						</div>
+					</li>
+					<li>装修攻略
+						<div class="sele">
+							<span class="seles">装修资讯</span>
+							<span class="seles">装修知识</span>
+							<span class="seles">装修学堂</span>
+						</div>
+					</li>
+					<li>装修图片
+						<div class="sele">
+							<span class="seles">家居美图</span>
+							<span class="seles">家居图册</span>
+							<span class="seles">精品专题</span>
+						</div>
+					</li>
+					<li>家居生活
+						<div class="sele">
+							<span class="seles">植物花卉</span>
+							<span class="seles">宠物</span>
+							<span class="seles">手工DIY</span>
+						</div>
+					</li>
 				</ul>
 				<div id="scan"><img src="img/mobile-saomiao.gif"></div>
 			</div>
@@ -55,10 +78,33 @@
 		<div id="banner-wrap">
 			<div id="banner">
 				<div id="banner-left" class="fl">
-					<img src="img/index-banner-left1 .jpg"/>
+					<div id="banner-img-box">
+						<img class="banner-img" src="img/index-banner-left1.jpg"/>
+						<img class="banner-img" src="img/index-banner-left2.jpg"/>
+						<img class="banner-img" src="img/index-banner-left3.jpg"/>
+						<img class="banner-img" src="img/index-banner-left4.jpg"/>
+						<img class="banner-img" src="img/index-banner-left5.jpg"/>
+						<img class="banner-img" src="img/index-banner-left6.jpg"/>
+					</div>
+					<a class="banner-a" href="#" rel="nofollow" target="_blank"></a>
+					<div id="banner-left-nav">
+						<a class="banner-lefta current"></a><!--
+						--><a class="banner-lefta"></a><!--
+						--><a class="banner-lefta"></a><!--
+						--><a class="banner-lefta"></a><!--
+						--><a class="banner-lefta"></a><!--
+						--><a class="banner-lefta"></a>
+					</div>
+					<p id="banner-left-prev">&lt;</p>
+					<p id="banner-left-next">&gt;</p>
 				</div>
 				<div id="banner-right" class="fr">
-					<img src="img/index-banner-right1.jpg" class="fl"/>
+					
+					<a href="#" target="_blank" rel="nofollow"><img src="img/index-banner-right1.jpg" class="fl"/></a>
+					
+					<div id="banner-bg"></div>
+					<p id="banner-right-prev">&lt;</p>
+					<p id="banner-right-next">&gt;</p>
 				</div>
 			</div>
 		</div>
@@ -67,7 +113,8 @@
 				<div id="index-mian1-tit">
 					<div id="tit-left" class="fl"><h2>家居商城</h2></div>
 					<div id="tit-right" class="fl">
-						<span class="titr titrcurr">家具城</span><span class="titr">建材城</span>
+						<a class="titr titrcurr" href="#" rel="nofollow" target="_blank">家具城</a><!--
+						--><a class="titr" href="#" rel="nofollow" target="_blank">建材城</a>
 					</div>
 				</div>
 				<div id="main1-con">
@@ -98,19 +145,37 @@
 						</div>
 					</div>
 					<div id="main1-con-right">
-						<div id="mcrl">
-							<div id="mcrl-con"><a rel="nofollow" href="#" target="_blank" title="克罗德曼"><img src="img/mcrl1.jpg"></a></div>
+						<div class="im1cr1">
+							<div class="mcrl">
+								<div class="mcrl-con"><a rel="nofollow" href="#" target="_blank" title="克罗德曼"><img src="img/m1crl1.jpg"></a></div>
+							</div>
+							<div class="mcrc">
+								<a href="#" target="_blank" rel="nofollo" title="双喜胡桃木书桌柜"><img src="img/mcrc1.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="宝莱佳白蜡木五斗柜"><img src="img/mcrc2.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="青岛一木橡木梳妆台"><img src="img/mcrc3.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="美诚美诺油楠木长茶几"><img src="img/mcrc4.jpg"></a>
+							</div>
+							<div class="mcrr">
+								<a href="#" target="_blank" rel="nofollo" title="瀚庭全棉空调被"><img src="img/mcrr1.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="盛世东方胡桃木组合柜"><img src="img/mcrr2.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="邑美带柜挂衣架"><img src="img/mcrr3.jpg"></a>
+							</div>
 						</div>
-						<div id="mcrc">
-							<a href="#" target="_blank" rel="nofollo" title="双喜胡桃木书桌柜"><img src="img/mcrc1.jpg"></a>
-							<a href="#" target="_blank" rel="nofollo" title="宝莱佳白蜡木五斗柜"><img src="img/mcrc2.jpg"></a>
-							<a href="#" target="_blank" rel="nofollo" title="青岛一木橡木梳妆台"><img src="img/mcrc3.jpg"></a>
-							<a href="#" target="_blank" rel="nofollo" title="美诚美诺油楠木长茶几"><img src="img/mcrc4.jpg"></a>
-						</div>
-						<div id="mcrr">
-							<a href="#" target="_blank" rel="nofollo" title="瀚庭全棉空调被"><img src="img/mcrr1.jpg"></a>
-							<a href="#" target="_blank" rel="nofollo" title="盛世东方胡桃木组合柜"><img src="img/mcrr2.jpg"></a>
-							<a href="#" target="_blank" rel="nofollo" title="邑美带柜挂衣架"><img src="img/mcrr3.jpg"></a>
+						<div class="im1cr1 none">
+							<div class="mcrl">
+								<div class="mcrl-con"><a rel="nofollow" href="#" target="_blank" title="克罗德曼"><img src="img/mcrl1.jpg"></a></div>
+							</div>
+							<div class="mcrc">
+								<a href="#" target="_blank" rel="nofollo" title="双喜胡桃木书桌柜"><img src="img/m1rc1.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="宝莱佳白蜡木五斗柜"><img src="img/m1rc2.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="青岛一木橡木梳妆台"><img src="img/m1rc3.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="美诚美诺油楠木长茶几"><img src="img/m1rc4.jpg"></a>
+							</div>
+							<div class="mcrr">
+								<a href="#" target="_blank" rel="nofollo" title="瀚庭全棉空调被"><img src="img/m1crr1.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="盛世东方胡桃木组合柜"><img src="img/m1crr2.jpg"></a>
+								<a href="#" target="_blank" rel="nofollo" title="邑美带柜挂衣架"><img src="img/m1crr3.jpg"></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -148,57 +213,165 @@
 					<div id="bottomborder"></div>
 					<div id="im3-con">
 						<div id="im3cl" class="fl">
-							<div id="im3cleft-dl">
-								<dl class="im3dl1">
-									<dt>
-										<a href="# fl" rel="nofollow" target="_blank"><img src="img/im3cl-1.jpg"/></a>
-									</dt>
-									<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">如何安装面盆下水器</a></dd>
-								</dl>
-								<dl class="im3dl1 fl">
-									<dt>
-										<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl-2.jpg"/></a>
-									</dt>
-									<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">地板漆起泡怎么办</a></dd>
-								</dl>
-								<dl class="im3dl1 fl">
-									<dt>
-										<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl-3.jpg"/></a>
-									</dt>
-									<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">耐水腻子的优缺点</a></dd>
-								</dl>
-								<dl class="im3dl1 fl" style="margin: 0;">
-									<dt>
-										<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl-4.jpg"/></a>
-									</dt>
-									<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">精装房入住前也需仔细...</a></dd>
-								</dl>
+							<div class="im3cl-box">
+								<div class="im3cleft-dl">
+									<dl class="im3dl1">
+										<dt>
+											<a href="# fl" rel="nofollow" target="_blank"><img src="img/im3cl-1.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">如何安装面盆下水器</a></dd>
+									</dl>
+									<dl class="im3dl1 fl">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl-2.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">地板漆起泡怎么办</a></dd>
+									</dl>
+									<dl class="im3dl1 fl">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl-3.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">耐水腻子的优缺点</a></dd>
+									</dl>
+									<dl class="im3dl1 fl" style="margin: 0;">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl-4.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">精装房入住前也需仔细...</a></dd>
+									</dl>
+								</div>
+								<div class="im3c-list">
+									<ul class="im3cul fl">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">家庭装修防水处理主要材料和步骤</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">实木地板安装高度以及注意事项</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">凉席怎么那么脏</a></li>
+									</ul>
+									<ul class="im3cul fl">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">面盆下水器阻塞 漏水怎么办</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">让你瞬间变成“清洁达人”</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">不同面盆的安装技巧</a></li>
+									</ul>
+									<ul class="im3cul fl" style="margin-right: 0;">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">面盆下水器的情节方法</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">厨房重灾区如何清洁</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">什么是刮腻子</a></li>
+									</ul>
+								</div>
+								<div class="im3c-foot">
+									<ul class="im3cul1 fl">
+										<li class="fl margin" style="margin-right:30px;"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">空气净化产品弊端</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">让你瞬间变身“清洁达人”</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">预防装修污染需要注意的5点</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">家庭装修防水处理主要材料和步骤</a></li>
+									</ul>
+								</div>
 							</div>
-							<div id="im3c-list">
-								<ul class="im3cul fl">
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">家庭装修防水处理主要材料和步骤</a></li>
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">实木地板安装高度以及注意事项</a></li>
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">凉席怎么那么脏</a></li>
-								</ul>
-								<ul class="im3cul fl">
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">面盆下水器阻塞 漏水怎么办</a></li>
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">让你瞬间变成“清洁达人”</a></li>
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">不同面盆的安装技巧</a></li>
-								</ul>
-								<ul class="im3cul fl" style="margin-right: 0;">
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">面盆下水器的情节方法</a></li>
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">厨房重灾区如何清洁</a></li>
-									<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">什么是刮腻子</a></li>
-								</ul>
+							<div class="im3cl-box none">
+								<div class="im3cleft-dl">
+									<dl class="im3dl1">
+										<dt>
+											<a href="# fl" rel="nofollow" target="_blank"><img src="img/im3cl2-1.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">方太油烟机</a></dd>
+									</dl>
+									<dl class="im3dl1 fl">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl2-2.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">浪鲸卫浴</a></dd>
+									</dl>
+									<dl class="im3dl1 fl">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl2-3.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">掌上明珠家具</a></dd>
+									</dl>
+									<dl class="im3dl1 fl" style="margin: 0;">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl2-4.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">华鹤家具</a></dd>
+									</dl>
+								</div>
+								<div class="im3c-list">
+									<ul class="im3cul fl">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">首届新加坡室内设计大奖发布</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">科勒</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">浪鲸卫浴</a></li>
+									</ul>
+									<ul class="im3cul fl">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">面掌上明珠家具</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">设计专题———苏州蓝光售楼处</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">全友家居</a></li>
+									</ul>
+									<ul class="im3cul fl" style="margin-right: 0;">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">设计专题——深圳地王大厦House Of Hell...</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">浴缸日常清洗注意事项</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">诺贝尔瓷砖</a></li>
+									</ul>
+								</div>
+								<div class="im3c-foot">
+									<ul class="im3cul1 fl">
+										<li class="fl margin" style="margin-right:30px;"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">美标</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">和成卫浴</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">美的</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">欧派家居</a></li>
+									</ul>
+								</div>
 							</div>
-							<div class="im3c-foot">
-								<ul class="im3cul1 fl">
-									<li class="fl margin" style="margin-right:30px;"><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">空气净化产品弊端</a></li>
-									<li class="fl margin"><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">让你瞬间变身“清洁达人”</a></li>
-									<li class="fl margin"><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">预防装修污染需要注意的5点</a></li>
-									<li class="fl margin"><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">家庭装修防水处理主要材料和步骤</a></li>
-								</ul>
-							</div>
+							<div class="im3cl-box none">
+								<div class="im3cleft-dl">
+									<dl class="im3dl1">
+										<dt>
+											<a href="# fl" rel="nofollow" target="_blank"><img src="img/im3cl3-1.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">北欧风格中带有一些俏皮</a></dd>
+									</dl>
+									<dl class="im3dl1 fl">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl3-2.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">瓷砖铺设的主要步骤和...</a></dd>
+									</dl>
+									<dl class="im3dl1 fl">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl3-3.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">让你大开眼界的背景墙</a></dd>
+									</dl>
+									<dl class="im3dl1 fl" style="margin: 0;">
+										<dt>
+											<a href="#" rel="nofollow" target="_blank"><img src="img/im3cl3-4.jpg"/></a>
+										</dt>
+										<dd><a class="im3-dl1-txt" href="#" rel="nofollow" target="_blank">精装房入住前也需仔细...</a></dd>
+									</dl>
+								</div>
+								<div class="im3c-list">
+									<ul class="im3cul fl">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">水电改造注意事项</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">合理规划 建设温馨餐厅</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">凉家居照明用品挑选要点</a></li>
+									</ul>
+									<ul class="im3cul fl">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">巧选装修公司</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">装修施工流程</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">毛坯房完整装修流程</a></li>
+									</ul>
+									<ul class="im3cul fl" style="margin-right: 0;">
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">水彩插画师 复古风家居</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">感觉幸福温暖的日式风家</a></li>
+										<li><a class="im3-ul1-txt" href="#" rel="nofollow" target="_blank">地中海混搭 艺术家的小屋</a></li>
+									</ul>
+								</div>
+								<div class="im3c-foot">
+									<ul class="im3cul1 fl">
+										<li class="fl margin" style="margin-right:30px;"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">大声对甲醛说不</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">白色主调 美式乡村风小屋</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">系数涂料装修中的误区</a></li>
+										<li class="fl margin"><a class="im3-ul1-txt no" href="#" rel="nofollow" target="_blank">水电改造注意事项</a></li>
+									</ul>
+								</div>
+							</div>	
 						</div>
 						<div id="im3cr" class="fr">
 							<a class="im3cr-img" href="#" title="情聚建配龙" rel="nofollow" target="_blank"><img src="img/im3cr-1.jpg"></a>
@@ -231,7 +404,22 @@
 				</div>
 				<div id="index-main4-con">
 					<div id="im4cl">
-						<a class="im4cla" title="新中式家装设计图" target="_blank" rel="nofollow"><img src="img/index-main4-1.jpg"></a>
+						<div id="im4cla-box">
+							<a class="im4cla" href="#" title="新中式家装设计图" target="_blank" rel="nofollow"><img src="img/index-main4-1.jpg"></a>
+							<a class="im4cla" href="#" title="新中式家装设计图" target="_blank" rel="nofollow"><img src="img/index-main4-2.jpg"></a>
+							<a class="im4cla" href="#" title="新中式家装设计图" target="_blank" rel="nofollow"><img src="img/index-main4-3.jpg"></a>
+							<a class="im4cla" href="#" title="新中式家装设计图" target="_blank" rel="nofollow"><img src="img/index-main4-4.jpg"></a>
+							<a class="im4cla" href="#" title="新中式家装设计图" target="_blank" rel="nofollow"><img src="img/index-main4-5.jpg"></a>
+						</div>
+						<div id="im4cl-nav">
+							<div class="im4cl-list im4cl-color"></div><!--
+							--><div class="im4cl-list"></div><!--
+							--><div class="im4cl-list"></div><!--
+							--><div class="im4cl-list"></div><!--
+							--><div class="im4cl-list"></div>
+						</div>
+						<p id="im4cl-prev">&lt;</p>
+						<p id="im4cl-next">&gt;</p>
 					</div>
 					<div id="im4cc">
 						<a id="imaca-1" class="im4ca" href="#" target="_blank" rel="nofollow" title="现代简约风格家装设计"><img src="img/im4cc-1.jpg"></a>

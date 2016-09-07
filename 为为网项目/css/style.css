@@ -41,7 +41,8 @@ a { color:#666; text-decoration:none; }
 #index-logo h1{width:268px;height:70px;background: url(../img/index-logo.jpg) no-repeat left bottom;}
 #search-box{float:left;width:511px;height:70px;margin-left:12%}
 #search-box #search-nav{width:100%;height:28px;float: left;}
-#search-box #search-nav li{font-size:12px;color:;text-align:center;line-height:28px;width:64px;height:100%;float:left;border-right: 1px solid #fff;}
+#search-box #search-nav:hover{cursor:pointer;}
+#search-box #search-nav li{font-size:12px;text-align:center;line-height:28px;width:64px;height:100%;float:left;border-right: 1px solid #fff;}
 .currentborder{border-right: 1px solid #dfa841;}
 #search{display:inline-block;height:26px;width:412px;outline: none;border: 1px solid #d6a956;padding:4px 8px;}
 #form1 #btn{display: inline-block;height:36px;width:80px;background: #fea500;outline: none;border:0}
@@ -54,7 +55,10 @@ a { color:#666; text-decoration:none; }
 #nav-wrap{border-bottom:2px solid #fea500;}
 #nav{height:39px;}
 #nav-nav{float: left;width:905px;height: 39px;}
-#nav-nav li{font-size:16px;font-weight:900;height:39px;width:181px;float:left;text-align: center;line-height: 39px;font-size: ;}
+#nav-nav li{position:relative;font-size:16px;font-weight:900;height:39px;width:181px;float:left;text-align: center;line-height: 39px;font-size: ;}
+.sele{z-index: 5;position:relative;padding: 8px 0;background:#313131;text-align: center;display: none;}
+.sele .seles{display:block;width:181px;height:23px;color: #fff;font-size: 14px;line-height:23px;}
+.sele .seles:hover{background-color: #191919;}
 /*第三部分设置扫描二维码的位置*/
 #scan{position: relative;float:right;height:50px;width:180px;margin-right: 2px;}
 #scan img{position: absolute;top:-11px;}
@@ -63,9 +67,22 @@ a { color:#666; text-decoration:none; }
 /*这是首页第四部分banner设置*/
 #banner-wrap{padding-top:8px;}
 #banner{height: 360px;overflow: hidden;}
-#banner-left{width:920px;height:360px;}
-#banner-right{width:266px;height:360px;}
+#banner-left{width:920px;height:360px;position: relative;z-index: 0;}
+#banner-left img{position: absolute;z-index: 0;}
+#banner-left-nav{width:240px;height:10px;position: absolute;bottom:15px;left:380px}
+.banner-lefta{margin:0 5px;display: inline-block;height:10px;width:30px;border-radius: 5px;}
+.banner-a{position: absolute;display: block;height:100%;width: 100%;}
+#banner-left-prev,#banner-left-next{font-weight:900;display:none;text-align:center;line-height:55px;top:45%;position: absolute;height: 55px;width:55px;font-size:24px;color:#fff;background: #000;filter:alpha(opacity=30);opacity: .3;}
+#banner-left-prev{left: 10px;}
+#banner-left-next{right:10px;}
+
+
+#banner-right{width:266px;height:360px;position: relative;}
 #banner-right img{border:0;}
+#banner-right-prev,#banner-right-next{font-weight:900;display:none;text-align:center;line-height:40px;top:45%;position: absolute;height: 40px;width:40px;font-size:24px;color:#fff;background: #000;filter:alpha(opacity=20);opacity: .2;}
+#banner-bg{height:24px;width:29px;position: absolute;left:46%;bottom:15px;background: url(../img/banner-right-bg.jpg) no-repeat center;border-radius: 8px;}
+#banner-right-prev{left:3px;}
+#banner-right-next{right:3px;}
 
 
 
@@ -95,20 +112,22 @@ a { color:#666; text-decoration:none; }
 #mclb-con{width:213px;height:104px;float:left;}
 
 /*nain1的右半部分*/
-#main1-con-right{border-right:1px solid #eee;border-bottom:1px solid #eee;float:left;height:438px;width:973px;}
-#mcrl{float:left;width:352px;padding:10px;height:420px;}
-#mcrl-con{width:352px;height:420px;border:1px solid #e9b4c6;}
-
-#mcrc{float:left;height:438px;width:398px;border:1px solid #eee;border-top:0;}
-#mcrc a{display:block;float: left;width:198px;border-bottom: 1px solid #eee;border-right: 1px solid #eee;}
-#mcrc a img{display: block;width:198px;}
-#mcrr{float:left;height:438px;width:200px;border-right:1px solid #eee;overflow: hidden;}
-#mcrr img{width:200px;}
+#main1-con-right{border-right:1px solid #eee;border-bottom:1px solid #eee;float:left;height:438px;width:973px;position: relative;}
+.im1cr1{position: absolute;height:438px;width:973px;}
+.mcrl{float:left;width:352px;padding:10px;height:420px;}
+.mcrl-con{width:352px;height:420px;border:1px solid #e9b4c6;}
+.none{display: none;}
+.mcrc{float:left;height:438px;width:398px;border:1px solid #eee;border-top:0;}
+.mcrc a{display:block;float: left;width:198px;border-bottom: 1px solid #eee;border-right: 1px solid #eee;}
+.mcrc a img{display: block;width:198px;}
+.mcrr{float:left;height:438px;width:200px;border-right:1px solid #eee;overflow: hidden;}
+.mcrr img{width:200px;}
 
 /*这是首页第六部分的的main2部分*/
 #index-main2{height:217px;}
 #im2-tit{height:70px;width:1200px;line-height:70px;}
 .im2ta{font-size:28px;color:#333;}
+.im2ta:hover{color:#fea500;}
 .im2-src{width:118px;}
 .im2txta{text-align:center;width:118px;height:118px;border:1px solid #eeeeee;margin-right:15px;}
 .im2-1sta{font-size:18px;color:#fff;margin-right:15px;float:left;padding:36px 42px 30px 42px;width:36px;height:54px;background: #fea500;}
@@ -118,20 +137,25 @@ a { color:#666; text-decoration:none; }
 
 /*这是首页第七部分main3部分*/
 #index-main3{height:409px;}
+#index-main3 a:hover{color:#fea500;}
+#index-main3 .no:hover{color:#333;}
 #im3-tit{height:41px;width:1200px;}
 #im3t-nav{height:41px;width:372px;float: left;}
 #bottomborder{border-bottom:1px solid #000;float:left;height:40px;width:500px;}
 .im4tna{text-align:center;line-height:37px;font-size:16px;color: #333;display:inline-block;width:123px;height:37px;border-top:3px solid #fff;border-bottom: 1px solid #000;}
 .im3acurr{width:123px;border:1px solid #fff;border-right: 1px solid #000;border-right: 1px solid #000;border-bottom: 1px solid #fff;border-top:3px solid #000;}
-#im3cl{height:338px;width:872px;padding-top:30px;}
-#im3cleft-dl{height:185px;width:872px;}
+.im3amore{width:123px;border:1px solid #000;border-bottom: 1px solid #fff;border-top:3px solid #000;}
+
+#im3cl{height:368px;width:872px;position: relative;}
+.im3cl-box{height:338px;width:872px;padding-top:30px;position:absolute;}
+.im3cleft-dl{height:185px;width:872px;}
 .im3dl1{float: left;margin-right: 33px;}
 .im3dl1 img{width:193px;height:140px;}
 .im3dl1 dd {text-align: center;font-size:16px;}
 .im3dl1 dd .im3-dl1-txt{color:#333;line-height: 36px;}
 .im3cul li{height:35px;border-bottom: dotted 1px #ccc;width:273px;}
 .im3-ul1-txt{color:#333;line-height:35px;font-size:12px;}
-#im3c-list{width:872px;height:106px;margin-bottom: 15px;}
+.im3c-list{width:872px;height:106px;margin-bottom: 15px;}
 .im3cul{list-style-type: square;list-style-position: inside;margin-right:25px;}
 .im3cul1{margin:0;width:872px;height:32px;list-style-type: square;list-style-position: inside;}
 .im3cul1 .margin{float: left; margin-right:25px;border:0;width:190px;}
@@ -151,11 +175,22 @@ a { color:#666; text-decoration:none; }
 /*这是首页第八部分main4部分*/
 #index-main4{height:501px;}
 #index-main4-tit{height:67px;padding-top:34px;width: 100%;}
+#index-main4-tit a:hover{color:#fea500;}
 #im4th{font-size:28px;line-height:67px;height:67%;width:196px;}
 .im4tha{float:left;width:100%;height:100%}
 #im4tr .im4ta{float: left;margin-left:31px;line-height:67px;}
 #index-main4-con{height:400px;width:100%;}
-#im4cl{height:400px;width:590px;overflow: hidden;float: left;}
+#im4cl{overflow:hidden;height:400px;width:590px;float: left;position: relative;}
+#im4cl #im4cla-box{position: absolute;width:2950px;height:400px}
+.im4cla{float:left;}
+#im4cl-nav{width:170px;height:9px;position: absolute;bottom: 10px;left:215px;}
+.im4cl-list{float:left;margin:0 5px;height:9px;width:24px;border-radius: 3px;background: #fff;}
+.im4cl-color{background: #fea500;}
+#im4cl-prev,#im4cl-next{font-weight:900;text-align:center;display:none;width:45px;height: 45px;line-height:45px;position: absolute;top:45%;font-size:24px;color:#fff;background: #000;filter:alpha(opacity=20);opacity: .2}
+#im4cl-prev{left:5px;}
+#im4cl-next{right:5px;}
+
+
 #im4cc{float:left;height:400px;width: 281px;margin:0 24px 30px;}
 .im4ca{float: left;}
 #imaca-1{margin-bottom: 20px;}
@@ -172,7 +207,7 @@ a { color:#666; text-decoration:none; }
 #link-tit{height:39px;font-size:12px;color:#333;width:100%;}
 #link-con{height:118px;width:1138px;border:solid 1px #eaeaea;padding: 5px 31px 0 31px;}
 #link-con .lca{margin-right:30px;line-height: 40px;font-size:12px;color: #5e696f;font-size:12px;color:#333;}
-
+#link-con .lca:hover{color:#fea500;}
 
 
 
