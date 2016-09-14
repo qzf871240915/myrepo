@@ -7,6 +7,16 @@ $(function(){
 		}
 	)
 })
+
+$(function(){
+	$("#btn").on("click",function(){
+		
+		if($("#search").val()=='书桌'){
+			window.open("html/search-good.html")
+		}
+	})
+})
+
 $(function(){
 	$("#search-nav li").on("click",function(){	
 		$("#search-nav li").removeClass("current");
